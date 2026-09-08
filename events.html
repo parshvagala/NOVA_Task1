@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Events — DJS NOVA</title>
+  <meta name="description" content="Browse talks, workshops, competitions and stargazing sessions at DJS NOVA, 14–15 November 2026." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%23060714'/%3E%3Ccircle cx='42' cy='38' r='20' fill='%2338e0c8'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <canvas id="starfield"></canvas>
+
+  <header class="site-header">
+    <div class="wrap nav-row">
+      <a href="index.html" class="brand"><span class="brand-mark"></span>DJS NOVA</a>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="events.html" class="is-active">Events</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <span class="kicker">14–15 November 2026</span>
+        <h1>Every talk, workshop and telescope, in one place</h1>
+        <p>Nine sessions across two days. Filter by what you're in the mood for, or scroll down for the full run of show.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+      <div class="wrap">
+        <div class="filter-row reveal">
+          <button class="filter-btn is-active" data-filter="all">All sessions</button>
+          <button class="filter-btn" data-filter="talks">Talks</button>
+          <button class="filter-btn" data-filter="workshops">Workshops</button>
+          <button class="filter-btn" data-filter="competitions">Competitions</button>
+          <button class="filter-btn" data-filter="stargazing">Stargazing</button>
+        </div>
+
+        <div class="event-grid">
+          <article class="event-card reveal" data-event-type="talks">
+            <div class="event-card-top">
+              <span class="event-type" data-type="talks">Talk</span>
+              <span class="event-day">Day 1</span>
+            </div>
+            <h3>Opening keynote: what we still don't know</h3>
+            <p>A working astrophysicist on the open questions that outlived every telescope built to answer them.</p>
+            <div class="event-card-foot"><span>Main Auditorium</span><span>10:00–11:00 AM</span></div>
+          </article>
+
+          <article class="event-card reveal" data-event-type="workshops">
+            <div class="event-card-top">
+              <span class="event-type" data-type="workshops">Workshop</span>
+              <span class="event-day">Day 1</span>
+            </div>
+            <h3>Build a working CanSat</h3>
+            <p>Design, wire and launch a small satellite-in-a-can. No prior electronics experience needed.</p>
+            <div class="event-card-foot"><span>Fabrication Lab</span><span>11:30 AM–2:00 PM</span></div>
+          </article>
+
+          <article class="event-card reveal" data-event-type="talks">
+            <div class="event-card-top">
+              <span class="event-type" data-type="talks">Talk</span>
+              <span class="event-day">Day 1</span>
+            </div>
+            <h3>Rocketry 101: from Estes to sounding rockets</h3>
+            <p>What actually changes when a hobby rocket becomes a research instrument.</p>
+            <div class="event-card-foot"><span>Seminar Hall B</span><span>2:30–3:30 PM</span></div>
+          </article>
+
+          <article class="event-card reveal" data-event-type="competitions">
+            <div class="event-card-top">
+              <span class="event-type" data-type="competitions">Competition</span>
+              <span class="event-day">Day 1</span>
+            </div>
+            <h3>AstroPhoto sprint</h3>
+            <p>Capture the best shot of the sky before sunset, phone cameras welcome, judged that same evening.</p>
+            <div class="event-card-foot"><span>Front Lawns</span><span>4:00–6:00 PM</span></div>
+          </article>
+
+          <article class="event-card reveal" data-event-type="stargazing">
+            <div class="event-card-top">
+              <span class="event-type" data-type="stargazing">Stargazing</span>
+              <span class="event-day">Day 1</span>
+            </div>
+            <h3>Telescope night on the terrace</h3>
+            <p>Six telescopes, guided by the astronomy club, pointed at whatever Mumbai's sky allows.</p>
+            <div class="event-card-foot"><span>Rooftop Terrace</span><span>8:00–11:00 PM</span></div>
+          </article>
+
+          <article class="event-card reveal" data-event-type="workshops">
+            <div class="event-card-top">
+              <span class="event-type" data-type="workshops">Workshop</span>
+              <span class="event-day">Day 2</span>
+            </div>
+            <h3>Mission design: plan a moon landing</h3>
+            <p>Work in teams through fuel budgets, trajectories and the trade-offs that decide whether you land or crash.</p>
+            <div class="event-card-foot"><span>Fabrication Lab</span><span>9:30 AM–12:30 PM</span></div>
+          </article>
+
+          <article class="event-card reveal" data-event-type="talks">
+            <div class="event-card-top">
+              <span class="event-type" data-type="talks">Talk</span>
+              <span class="event-day">Day 2</span>
+            </div>
+            <h3>Panel: careers beyond earth</h3>
+            <p>Four people who ended up working on space missions, on how none of them planned it that way.</p>
+            <div class="event-card-foot"><span>Main Auditorium</span><span>1:00–2:00 PM</span></div>
+          </article>
+
+          <article class="event-card reveal" data-event-type="competitions">
+            <div class="event-card-top">
+              <span class="event-type" data-type="competitions">Competition</span>
+              <span class="event-day">Day 2</span>
+            </div>
+            <h3>Quiz night: across the solar system</h3>
+            <p>Team-based general astronomy quiz, from planetary trivia to genuinely hard mission history.</p>
+            <div class="event-card-foot"><span>Seminar Hall A</span><span>2:30–3:30 PM</span></div>
+          </article>
+
+          <article class="event-card reveal" data-event-type="talks">
+            <div class="event-card-top">
+              <span class="event-type" data-type="talks">Talk</span>
+              <span class="event-day">Day 2</span>
+            </div>
+            <h3>Closing keynote: small steps, bigger questions</h3>
+            <p>Where the field is actually headed next, and which of today's open problems might get solved first.</p>
+            <div class="event-card-foot"><span>Main Auditorium</span><span>4:00–5:00 PM</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="kicker">Run of show</span>
+          <h2>The full two-day schedule</h2>
+          <p>Everything in order, so you can plan your day without checking the grid above twice.</p>
+        </div>
+
+        <h3 style="color:var(--star); font-size:1.15rem; margin-bottom:1rem;">Day 1 — Saturday</h3>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <span class="timeline-time">10:00 AM</span>
+            <h4>Opening keynote: what we still don't know</h4>
+            <p>Main Auditorium</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span class="timeline-time">11:30 AM</span>
+            <h4>Build a working CanSat</h4>
+            <p>Fabrication Lab</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span class="timeline-time">2:30 PM</span>
+            <h4>Rocketry 101: from Estes to sounding rockets</h4>
+            <p>Seminar Hall B</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span class="timeline-time">4:00 PM</span>
+            <h4>AstroPhoto sprint</h4>
+            <p>Front Lawns</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span class="timeline-time">8:00 PM</span>
+            <h4>Telescope night on the terrace</h4>
+            <p>Rooftop Terrace</p>
+          </div>
+        </div>
+
+        <h3 style="color:var(--star); font-size:1.15rem; margin:2.6rem 0 1rem;">Day 2 — Sunday</h3>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <span class="timeline-time">9:30 AM</span>
+            <h4>Mission design: plan a moon landing</h4>
+            <p>Fabrication Lab</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span class="timeline-time">1:00 PM</span>
+            <h4>Panel: careers beyond earth</h4>
+            <p>Main Auditorium</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span class="timeline-time">2:30 PM</span>
+            <h4>Quiz night: across the solar system</h4>
+            <p>Seminar Hall A</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span class="timeline-time">4:00 PM</span>
+            <h4>Closing keynote: small steps, bigger questions</h4>
+            <p>Main Auditorium</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+      <div class="wrap">
+        <div class="cta-banner reveal">
+          <h2>Workshop seats are capped and filling up.</h2>
+          <div class="hero-actions" style="margin-top:0;">
+            <a href="contact.html" class="btn btn-primary">Reserve a seat</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand"><span class="brand-mark"></span>DJS NOVA</a>
+          <p>A two-day festival of astronomy and space-tech — talks, builds, and one long night under the stars.</p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4>Explore</h4>
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="footer-col">
+            <h4>Festival</h4>
+            <span>14–15 November 2026</span>
+            <span>Mumbai, India</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 DJS NOVA. All signals reserved.</span>
+        <span>A student-run astronomy & space-tech festival.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/starfield.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
